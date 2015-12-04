@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "com.phonegap.bd"
+        versionCode = "1" 
+        version     = "1.0.0" >
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>Bunny Defender</name>
+
+    <description>
+        This is a simple game! Try to save the bunnies grazing on the hill from the shower of meteorites simply by exploding the meteorites in the air by clicking on the screen.But Beware ! The explosion might hurt the Bunnies also. Time to Defend the Bunnies! </description>
+
+    <author email="khadevnay.me@gmail.com">
+        Vinay
+    </author>
+	<content src="index.html"/>
+
+
+	<gap:platform name="android" />
+	
+	<preference name="phonegap-version" value="3.7.0" />
+	<preference name="orientation" value="portrait" />
+	<preference name="fullscreen" value="true" />
+	<preference name="exit-on-suspend" value="false" />
+	<preference name="prerendered-icon" value="true" />
+	<preference name="target-device" value="universal"/>
+ 	
+	
+	
+	<preference name="android-minSdkVersion" value="14" />
+	<preference name="android-installLocation" value="auto" />
+	
+	<feature name="http://api.phonegap.com/1.0/battery"/>
+	
+	<gap:plugin name="org.apache.cordova.inappbrowser" />
+	<gap:plugin name="org.apache.cordova.console" />
+	<gap:plugin name="org.apache.cordova.device" />
+	<gap:plugin name="org.apache.cordova.dialogs" />
+
+	<access origin="*" subdomains="true" />
+</widget>
